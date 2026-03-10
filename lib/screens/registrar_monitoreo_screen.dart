@@ -99,7 +99,8 @@ class _RegistrarMonitoreoScreenState extends State<RegistrarMonitoreoScreen> {
       color: Theme.of(context).scaffoldBackgroundColor,
       child: Column(
         children: [
-          _buildFormRow(label: 'Programa', value: 'Mauro 2025', isValid: true),
+          // ACTUALIZACIÓN AQUÍ: Se cambió a 'Seleccione programa' y isValid a false
+          _buildFormRow(label: 'Programa', value: 'Seleccione programa', isValid: false),
           _buildFormRow(label: 'Inspector', value: 'Seleccione inspector', isValid: false),
           _buildFormRow(label: 'Punto de Control', value: 'Seleccione estación', isValid: false),
           _buildFormRow(label: 'Matriz de Aguas', value: 'Seleccione Tipo de Aguas', isValid: false),
