@@ -1,0 +1,20 @@
+import 'package:flutter/material.dart';
+import '../widgets/app_drawer.dart';
+
+class ConectorWebScreen extends StatelessWidget {
+  const ConectorWebScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(title: const Text('ConectorWeb')),
+      drawer: const AppDrawer(currentRoute: '/conector_web'),
+      body: const Center(
+        child: Text(
+          'Welcome to ConectorWeb',
+          style: TextStyle(fontSize: 18),
+        ),
+      ),
+    );
+  }
+}
